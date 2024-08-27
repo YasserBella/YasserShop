@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    background-image: url('background2.jpeg'); /* Ensure the correct path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ensure body takes up at least full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 100%; /* Add top padding to create space below the fixed header */
+    position: relative;
+    z-index: 1; /* Places content above the background */
+    color: #fff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add semi-transparent background for better readability */
+    flex: 1; /* Allows the content to stretch to fill the remaining space */
+}
+
+/* Header Styles */
+header {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+    background: #555;
+}
+
+/* Main Content Styles */
+main {
+    padding: 100px 20px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Information */
+.contact-info {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form h2 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form a.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.contact-form a.btn:hover {
+    background: #555;
+}
+
+
+/* Footer Styles */
+footer {
+    background: #ffffff;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    margin: 10px 20px;
+    flex: 1;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1E90FF;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #1E90FF;
+}
+
+.footer-section .social-icon img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin: 0 5px; /* Space between icons */
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+.footer-section a {
+    display: inline-block;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
